@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+.nots{
+  font-family: 'Inter',sans-serif;
+  padding: 5em 2.5em;
+  margin-bottom: 15rem;
+}
+.notsFlex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5em 2em;
+    gap: 5em;
+    justify-content: center;
+}
+.nots h1{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.notArea{
+    width: 50rem;
+    min-height: 15rem;
+    background-color: #FFF;
+    border: .1rem solid #cbcbcb;
+    border-radius: 2rem;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.notArea .notDate{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.notArea .notContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    font-size: 1.6rem;
+    overflow: auto;
+}
+.notArea .notContent span{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}

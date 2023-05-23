@@ -1,0 +1,88 @@
+.messages {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+    overflow: auto;
+}
+.noMessage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+.noMessage #boldText{
+    font-weight: 500;
+    font-size: 2rem;
+    color: #000;
+}
+.noMessage #thinText{
+    font-size: 1.8rem;
+    color: #666;
+}
+.messages .message {
+    min-width: auto;
+    max-width: 35rem;
+    padding: 1em 2em;
+    height: auto;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.message .sender{
+    color: #EEE;
+}
+.message .messageContent{
+    font-size: 1.7rem;
+    align-self: flex-start;
+    line-height: 2rem;
+}
+.message .messageDate{
+    color: #EEE;
+    align-self: flex-end;
+}
+.messages .incoming {
+    background-color: #FFF;
+    align-self: flex-start;
+}
+.messages .incoming .messageDate{
+    color: #666;
+}
+.messages .transmitted {
+    background-color: #4285F4;
+    color: #FFF;
+    align-self: flex-end;
+}
+.messages .loaderArea .sep{
+    width: 50%;
+    height: 50%;
+}
+@media only screen and (max-width : 768px) {
+    .noMessage #boldText{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .noMessage #thinText{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .messages{
+        padding: .5em 1em;
+        overflow: hidden;
+    }
+    .messages .loaderArea .sep{
+        width: 25%;
+        height: 25%;
+    }
+    .messages .message {
+        padding: 1em;
+    }
+    .message .messageContent{
+        font-size: 1.5rem ;
+    }
+    .message .messageDate{
+        font-size: 1.3rem ;
+    }
+}

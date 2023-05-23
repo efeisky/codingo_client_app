@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+.completeArea{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    background-color: #FFFFFF;
+    border: 1px solid #cbcbcb;
+    margin: 5em auto;
+    border-radius: 1rem;
+    padding: 5em;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    font-family: 'Inter', sans-serif;
+}
+@media only screen and (max-width: 767px){
+    .completeArea{
+        width: 100%;
+        height: 80vh;
+        justify-content: start;
+        border-radius: 0;
+        border: none;
+        padding: 2.5em;
+        gap: 5em;
+    }
+}
+.completeArea h1{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.completeArea h1 .greeting{
+    font-weight: 500;
+}
+.completeArea form {
+    padding: 2em 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.completeArea form span{
+    font-size: 1.5rem;
+}
+.completeArea form input[type='file']{
+    font-size: 1.6rem;
+    border: 1px solid #cbcbcb;
+    transition: .3s all;
+    cursor: pointer;
+}
+.completeArea form input[type='file']::-webkit-file-upload-button{
+    padding: .5em 2em;
+    background-color: #FFFFFF;
+    border-right: 1px solid #cbcbcb;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    cursor: pointer;
+}
+.completeArea form input[type='file']:hover{
+    border: 1px solid #666666;
+}
+
+.completeArea form .finishButton{
+    padding: .5em 1em;
+    font-size: 1.7rem;
+    cursor: pointer;
+    border: none;
+    background-color: #232323;
+    border-radius: .5rem;
+    color: #FFFFFF;
+}
+.completeArea .passProcessButton{
+    padding: .5em 1em;
+    font-size: 1.7rem;
+    cursor: pointer;
+    border: 1px solid #232323;
+    background-color: #FFFFFF;
+    border-radius: .5rem;
+    color: #232323;
+}
+.completeArea h4{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.completeArea h4 span{
+    font-size: 1.7rem;
+    font-weight: 500;
+}

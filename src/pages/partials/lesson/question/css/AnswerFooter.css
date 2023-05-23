@@ -1,0 +1,72 @@
+.answerFooter {
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    bottom: -17.5vh;
+    left: 0;
+    width: 100%;
+    height: 17.5vh;
+    padding: 2em 10em;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    align-items: center;
+    gap: 2em;
+    transition: bottom 0.25s ease-in-out;
+}
+  
+.answerFooter img{
+    width: 20%;
+    justify-self: right;
+}
+.answerFooter .boldText{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.answerFooter .actions{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.answerFooter .actions .action{
+    cursor: pointer;
+}
+.trueAnswerFooter{
+    background-color: rgba(58, 205, 126, 20%);
+}
+.falseAnswerFooter{
+    background-color: rgba(234, 67, 53, 20%);
+}
+.trueAnswerFooter .boldText{
+    color: #3ACD7E;
+}
+.falseAnswerFooter .boldText{
+    color: #EA4335;
+}
+.trueAnswerFooter .actions{
+    color: #3ACD7E;
+}
+.falseAnswerFooter .actions{
+    color: #EA4335;
+}
+@media only screen and (max-width: 767px){
+    .trueAnswerFooter{
+        background-color: rgba(58, 205, 126, 100%);
+    }
+    .trueAnswerFooter .boldText,.trueAnswerFooter .actions,.falseAnswerFooter .boldText,.falseAnswerFooter .actions{
+        color: #FFF;
+        font-size: 1.6rem;
+    }
+    .falseAnswerFooter{
+        background-color: rgba(234, 67, 53, 100%);
+    }
+    .answerFooter{
+        display: flex !important;
+        flex-direction: column;
+        padding: 2em 5em;
+    }
+    .answerFooter img{
+        width: 2.5rem !important;
+    }
+    
+}

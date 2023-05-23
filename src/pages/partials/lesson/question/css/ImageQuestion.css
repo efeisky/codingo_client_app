@@ -1,0 +1,104 @@
+.imageQuestionArea{
+    font-family: 'Inter',sans-serif;
+    padding: 5em 0;
+    height: 90vh;
+    display: grid;
+    grid-template-rows: 5% 20% 35% 40%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.imageQuestionArea .questionLevel{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+.imageQuestionArea .questionLevel.kolay{
+    color: #3ACD7E;
+}
+.imageQuestionArea .questionLevel.orta{
+    color: #EAAF03;
+}
+.imageQuestionArea .questionLevel.zor{
+    color: #EA4335;
+}
+.imageQuestionArea .questionLevel.very-hard{
+    color: #C92D20;
+}
+.imageQuestionArea .question{
+    font-size: 2rem;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    max-width: 100%;
+    line-height: 3rem;
+    justify-content: center;
+}
+.imageQuestionArea .question #speakerImage{
+    cursor: pointer;
+}
+.imageQuestionArea .questionImage img{
+    height: 100%;
+    width: auto;
+}
+.imageQuestionArea .questionImage{
+    height: 100%;
+    text-align: center;
+}
+.imageQuestionArea .options{
+    display: grid;
+    gap: 2.5em;
+    width: 80rem;
+    grid-template-rows: 50% 50%;
+}
+.imageQuestionArea .options .optionRow{
+    display: flex;
+    gap: 2.5em;
+}
+.imageQuestionArea .options .optionRow .opt{
+    width: 100%;
+    min-height: 10rem;
+    border: .1rem solid #31455c;
+    background-color: #2d4055;
+    border-radius: 2rem;
+    padding: 1em 2em;
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    font-size: 2rem;
+    color: #BBB;
+    cursor: pointer;
+    transition: .3s all;
+}
+.imageQuestionArea .options .optionRow .opt #optContent{
+    color: #FFF;
+}
+
+@media only screen and (max-width: 767px){
+    .imageQuestionArea{
+        display: flex;
+        margin-bottom: 1em;
+        flex-direction: column;
+        gap: 2.5em;
+        height: auto;
+    }
+    .imageQuestionArea .questionImage img{
+        width: 80%;
+    }
+    .imageQuestionArea .options{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .imageQuestionArea .questionImage{
+        height: 25%;
+    }
+    .imageQuestionArea .options .optionRow{
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+}

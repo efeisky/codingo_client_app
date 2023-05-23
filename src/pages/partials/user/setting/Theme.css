@@ -1,0 +1,47 @@
+.themeOptions{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.themeOptions .biographyTitle{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+.themeOptions .biographyContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.themeOptions textarea{
+    width:100%;
+    min-height: 10rem;
+    resize: vertical;
+    font-size: 1.6rem;
+    padding: .5em 1em;
+    background-color: #FFF;
+    border: .1rem solid #BBB;
+    outline: none;
+    border-radius: .5rem;
+}
+.themeOptions input{
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: .5em 1em;
+    background-color: #FFF;
+    border: .1rem solid #BBB;
+    cursor: text;
+    border-radius: .5rem;
+    outline: none;
+}
+.themeOptions button{
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: .5em 1em;
+    background-color: #232323;
+    border: .1rem solid #BBB;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    transition: .1s all;
+    color: #FFF;
+}

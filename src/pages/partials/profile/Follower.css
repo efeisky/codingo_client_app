@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+.followArea{
+    padding: 1em 5em;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+    gap: 7.5em;
+}
+.followArea .follow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    cursor: pointer;
+}
+.followArea .follow #bold{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.follow span:nth-child(2){
+    font-size: 1.8rem;
+}
+.openableFollowWindow{
+    background-color: rgba(35,35,35,.8);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.openableFollowWindow .window{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    width: 50rem;
+    border-radius: 2rem;
+    height: 80vh;
+}
+.window #close{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    width: 4.2rem;
+}
+.window .top{
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+.window .people{
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: 85%;
+    overflow: auto;
+}
+.window .people #linkUser{
+    margin: 0 auto;
+    padding: 1em 0;
+    border-radius: 2rem;
+    width: 90%;
+    text-decoration: none;
+    color: #232323;
+    cursor: pointer;
+}
+.window .people #linkUser:hover{
+    background-color: #EEE;
+}
+.window .people .userDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.window .people .userDiv .userName{
+    color: #3ACD7E;
+}
+.window .people #loading {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: .5em 0 1em 0;
+    font-weight: 500;
+}
+@media only screen and (max-width: 767px){
+    .window{
+        height: 100vh !important;
+        padding: 2.5em !important;
+        width: 100% !important;
+        border-radius: 0 !important;
+    }
+    .window #close{
+        position: absolute;
+        top: 1.5em;
+        left: 1em;
+        cursor: pointer;
+        width: 4.2rem;
+    }
+}

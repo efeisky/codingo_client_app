@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+.chatArea{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 5em;
+}
+.chatArea .sideBar{
+    height: 80vh;
+    background-color: #FFF;
+}
+.chatArea .mainArea{
+    height: 80vh;
+    background-color: #eee;
+    font-size: 3rem;
+    display: grid;
+    grid-template-rows: 10% 70% 20%;
+}
+.chatArea .notSelectedUser{
+    height: 100%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+.notSelectedUser img{
+    width: 10rem;
+}
+.notSelectedUser h1{
+    font-size: 2.4rem;
+}
+.notSelectedUser h2{
+    font-size: 2rem;
+    color: #666;
+}
+@media only screen and (max-width: 1200px) {
+    .chatArea{
+        grid-template-columns: 25% 75%;
+    }
+}
+@media only screen and (max-width : 768px) {
+    .chatArea{
+        grid-template-columns: 30% 70%;
+        margin-bottom: 2.5em;
+    }
+    .chatArea .notSelectedUser img{
+        width: 5rem;
+    }
+    .chatArea .notSelectedUser h1{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .chatArea .notSelectedUser h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}

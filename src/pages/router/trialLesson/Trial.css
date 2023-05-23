@@ -1,0 +1,249 @@
+.trial{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5em;
+    padding: 0 2.5em;
+    color: #FFF;
+    margin: auto;
+}
+.trial h1{
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+.trial h2{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #EEE;
+}
+.trial h6{
+    font-size: 1.4rem;
+    width: 50%;
+    font-weight: 500;
+    color: #EEE;
+}
+.trial .eduArea{
+    width: 50%;
+}
+.trial .educationLevel{
+    color: #FFF;
+}
+.trial .pythonLevel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+}
+.trial .buttons{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+.trial button{
+    background-color: #2d4055;
+    padding: 1.5em 3em;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-weight: 500;
+    border-radius: 1.5rem;
+    transition: .1s all;
+    text-decoration: none;
+    cursor: pointer;
+}
+.trial #startLesson{
+    padding: 1.5em 10em;
+}
+.trial button:hover{
+    background-color: #31455c;
+}
+.trial #error{
+    display: flex;
+    font-size: 1.6rem;
+    gap: 1em;
+    color: #EA4335;
+    width: 50%;
+    align-items: center;
+    font-weight: 500;
+}
+@media only screen and (max-width: 1200px) and (min-width: 767px){
+    .trial{
+        padding: 0 .1em;
+    }
+    .trial .pythonLevel .buttons{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        width: 75%;
+    }
+    .trial h1{
+        font-size: 2rem;
+    }
+    .trial h2{
+        font-size: 1.6rem;
+    }
+    .trial .eduArea{
+        width: 75%;
+    }
+    .trial h6{
+        width: 100%;
+    }
+
+    .trial .startDiv{
+        display: flex;
+        justify-content: center;
+    }
+    .trial #startLesson{
+        width: 100%;
+        padding: 2em 5em;
+    }
+}
+@media only screen and (max-width: 767px){
+    .trial h1{
+        font-size: 2rem;
+    }
+    .trial h2{
+        font-size: 1.6rem;
+    }
+    .trial{
+        width: 75%;
+        padding: 0 2.5em;
+    }
+    .trial #startLesson{
+        width: 100%;
+        padding: 1em 2.5em;
+    }
+    .trial .pythonLevel .buttons{
+        display: grid;
+        place-items: center;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: unset;
+        width: 100%;
+    }
+    .trial .buttons button{
+        padding: 1em 2em;
+        max-width: 75%;
+    }
+    .trial h6{
+        width: 100%;
+    }
+    .trial .eduArea{
+        width: 90%;
+    }
+
+}
+.finishedLessonForTrial{
+    display: grid;
+    grid-template-rows: 10% 50% 10% 30%;
+    height: 80vh;
+    padding: 5em;
+    justify-content: center;
+    font-size: 2.4rem;
+    text-align: center;
+    color: #FFF;
+    gap: 1em;
+}
+.finishedLessonForTrial img{
+    height: 100%;
+    border-radius: 2.5rem;
+}
+.finishedLessonForTrial p{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.finishedLessonForTrial .links{
+    display: grid;
+    width: 60%;
+    margin: 0 auto;
+    gap: 1em;
+}
+.finishedLessonForTrial a{
+    background-color: #2d4055;
+    padding: 1.5em 3em;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-weight: 500;
+    border-radius: 1.5rem;
+    transition: .1s all;
+    text-decoration: none;
+    max-height: 50%;
+}
+.finishedLessonForTrial a:hover{
+    background-color: #31455c;
+}
+@media only screen and (max-width: 767px){
+    .finishedLessonForTrial .links{
+        width: 80%;
+    }
+    .finishedLessonForTrial p{
+        font-size: 1.8rem;
+    }
+    .finishedLessonForTrial h2{
+        font-size: 1.6rem;
+    }
+}
+.notFoundForTrial{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5em;
+    color: #FFF;
+}
+
+.notFoundForTrial img{
+    width: 4%;
+    min-width: 10rem;
+}
+.notFoundForTrial h1{
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+.notFoundForTrial h2{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #EEE;
+}
+.notFoundForTrial a{
+    background-color: #2d4055;
+    padding: 1.5em 3em;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-weight: 500;
+    border-radius: 1.5rem;
+    transition: .1s all;
+    text-decoration: none;
+    max-height: 50%;
+}
+.notFoundForTrial a:hover{
+    background-color: #31455c;
+}
+@media only screen and (max-width: 767px){
+    .notFoundForTrial img{
+        width: 5rem;
+        min-width: unset;
+    }
+    .notFoundForTrial h1{
+        font-size: 2rem;
+    }
+    .notFoundForTrial h2{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .notFoundForTrial a{
+        width: 80%;
+        text-align: center;
+        max-width: 50rem;
+    }
+}

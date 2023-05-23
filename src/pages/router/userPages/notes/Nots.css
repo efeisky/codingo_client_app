@@ -1,0 +1,24 @@
+.notFoundNotes{
+    width: 100%;
+    height: calc(100vh - 20vh);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    gap: 5em;
+    padding-top: 5em;
+}
+.notFoundNotes img{
+    width: 3%;
+    min-width: 7.5rem;
+}
+.notFoundNotes h1{
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+@media only screen and (max-width: 1020px){
+    .notFoundNotes h1{
+        font-size: 2.2rem !important;
+    }
+}

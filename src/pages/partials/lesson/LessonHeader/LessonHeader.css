@@ -1,0 +1,27 @@
+.lessonHeader{
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: 15vh;
+    border-bottom: .2rem solid #2a3c50;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    align-items: center;
+    color: #DDD;
+    font-size: 2rem;
+}
+.lessonHeader #importantValue{
+    font-weight: 500;
+    color: #EEE;
+}
+
+@media only screen and (max-width: 767px){
+    .lessonHeader{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        height: 20rem;
+        padding: 2.5em 0;
+        margin-bottom: 1em;
+    }
+}

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+.users{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 5em auto 10em auto;
+    font-family: 'Inter', sans-serif;
+    gap: 1rem;
+    height: 60rem;
+    overflow: auto;
+}
+.changeMode{
+    padding: 1.5rem 3rem;
+    font-size: 1.6rem;
+    background-color: #4285F4;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 1rem;
+    max-width: 100%;
+    transition: .3s all;
+}
+.changeMode:hover{
+    background-color: #3976da;
+}
+.users h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+.user{
+    padding: .5rem 1rem;
+    display: flex;
+    gap: 2em;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .5rem;
+}
+@media only screen and (max-width: 1020px){
+    .users{
+        margin-bottom: 15em;
+    }
+    .user{
+        flex-direction: column;
+        border-bottom: .1rem solid #cbcbcb;
+        border-radius: 0;
+    }
+    .user .left{
+        flex-direction: column;
+    }
+}
+.user .left{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.user #pictureProfile{
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+.user .left .rank{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+.user .nameArea{
+    min-width: 20rem;
+    max-width: 80rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+.user .nameArea .realname{
+    font-weight: 500;
+}
+.user .nameArea .username{
+    font-weight: 400;
+    color: rgb(58, 205, 126);
+    cursor: pointer;
+    text-decoration: none;
+}
+.user .nameArea .options{
+    position: relative;
+}
+.user .nameArea .optionSvg{
+    height: 3rem;
+    width: auto;
+    cursor: pointer;
+}
+.user .nameArea .options .optionMenu{
+    width: 20rem;
+    height: auto;
+    background-color: #FFFFFF;
+    min-height: 10rem;
+    border: 1px solid #cbcbcb;
+    border-radius: 1rem;
+    padding: .5em 1em;
+    content: "";
+    gap: 1em;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@media only screen and (max-width: 767px){
+    .user .nameArea .options{
+        display: none;
+    }
+}
+.user .nameArea .options .optionMenu .option{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: .5em;
+}
+.user .nameArea .options .optionMenu .option img{
+    width: 3rem;
+    height: auto;
+}
+.user .nameArea .options .optionMenu .option a{
+    text-decoration: none;
+    color: #000; 
+}

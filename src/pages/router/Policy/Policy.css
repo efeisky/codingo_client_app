@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+.policyArea{
+    padding: 5em 2em;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    gap: 2em;
+}
+.policyArea div{
+    background-color: #232323;
+    color: #FFF;
+    padding: 1em 2em;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.policyText{
+    font-family: 'Inter', sans-serif;
+    padding: 0 10em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.policyText h1{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.policyText h2{
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: .5rem;
+}
+.policyText p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-left: 1rem;
+    line-height: 2rem;
+}
+@media only screen and (max-width: 767px) {
+    .policyArea{
+        flex-direction: column;
+        gap: 1em;
+        justify-content: center;
+    }
+    .policyText{
+        padding: 0 2em;
+        margin-bottom: 15em;
+    }
+}

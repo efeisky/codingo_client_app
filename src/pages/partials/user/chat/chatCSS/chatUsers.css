@@ -1,0 +1,65 @@
+.usersArea{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em 1.5em;
+    overflow: auto;
+    height: 60vh;
+}
+
+.selectUser{
+    display: grid;
+    grid-template-columns: 25% 55% 20%;
+    align-items: center;
+    cursor: pointer;
+    padding: .5em;
+    border-radius: .5rem;
+}
+.selectUser:hover{
+    background-color: #EEE;
+}
+.selectUser .picture img{
+    width: 7.5rem;
+    height: 7.5rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.selectUser .texts{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.selectUser .texts .realname{
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.selectUser .texts .lastContent{
+    color: #777;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.selectUser .notRead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.selectUser .notRead img{
+    width: 3rem;
+    
+}
+@media only screen and (max-width : 768px) {
+    .selectUser{
+        grid-template-columns: none;
+        grid-template-rows: 25% 55% 20%;
+        place-items: center;
+        height: auto;
+        gap: 1em;
+        padding: 2.5em 0;
+        border-bottom: .1rem solid #cbcbcb;
+    }
+    .selectUser .picture img{
+        width: 5rem;
+        height: 5rem;
+    }
+}

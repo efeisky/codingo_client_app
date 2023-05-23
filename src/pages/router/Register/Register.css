@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+.registerBox{
+    background-color: #FFFFFF;
+    border: 1px solid #cbcbcb;
+    border-radius: 2rem;
+    font-family: 'Inter', sans-serif;
+    width: 50%;
+    margin: 10em auto;
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+@media only screen and (max-width: 767px) {
+    .registerBox{
+        width: 95%;
+        margin-bottom: 15em;
+        border: none;
+        margin: 5em auto 15em auto;
+    }
+}
+.registerBox h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+.registerBox form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 100%;
+}
+.registerBox form #seeName{
+    font-size: 1.4rem;
+}
+.registerBox form #seeName span{
+    color: #38B571;
+    font-weight: 500;
+}
+.registerBox form button{
+    padding: .5em 0;
+    font-size: 1.8rem;
+    background-color: #4285F4;
+    cursor: pointer;
+    border: none;
+    border-radius: .5rem;
+    color: #FFFFFF;
+    transition: .3s all;
+}
+.registerBox form button:hover{
+    background-color: #3974d3;
+}
+.registerBox #other {
+    text-align: center;
+    font-size: 1.7rem;
+}
+.registerBox .others{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.registerBox .others .googleButton{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background: none;
+    border: 1px solid #666666;
+    cursor: pointer;
+    padding: .5em 2em;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+}
+
+.registerBox form #error{
+    display: flex;
+    font-size: 1.4rem;
+    gap: 1em;
+    color: #EA4335;
+    align-items: center;
+    font-weight: 500;
+}

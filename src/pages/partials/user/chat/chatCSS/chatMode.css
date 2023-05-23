@@ -1,0 +1,28 @@
+.modeArea{
+    width: 90%;
+    height: 10vh;
+    background-color: #efefef;
+    margin: 2rem auto;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    text-align: center;
+}
+.modeArea div{
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+@media only screen and (max-width : 768px) {
+    .modeArea{
+        grid-template-columns: none;
+        gap: 1em;
+        padding: 1.5em .5em;
+        height: auto;
+        grid-template-rows: 50% 50%;
+    }
+    .modeArea div{
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+
+.reportProfile{
+    width: 60%;
+    height: auto;
+    padding: 10em 0;
+    background-color: #FFF;
+    margin: 10vh auto;
+    font-family: 'Inter', sans-serif;
+    border: .1rem solid #cbcbcb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.reportProfile h1{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+@media only screen and (max-width: 1020px){
+    .reportProfile{
+        width: 100%;
+        border-radius: 0;
+        border: none;
+        padding: 2.5em;
+    }
+    .reportProfile form button{
+        width: 60% !important;
+        min-width: 15rem;
+    }
+}
+.reportProfile form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    gap: 2em;
+}
+.reportProfile form span{
+    font-size: 1.8rem;
+    width: 100%;
+}
+.reportProfile form textarea{
+    width: calc(100% - 4em);
+    resize: vertical;
+    min-height: 20rem;
+    outline: none;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    padding: 1em 2em;
+}
+.reportProfile form button{
+    font-size: 1.8rem;
+    padding: 1em 2em;
+    border-radius: 1rem;
+    transition: .3s all;
+    background-color: #FFF;
+    cursor: pointer;
+    border: 1px solid #232323;
+    width: 30%;
+}
+.reportProfile form button:hover{
+    background-color: #232323;
+    color: #FFF;
+    border: none;
+}

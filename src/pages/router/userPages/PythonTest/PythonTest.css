@@ -1,0 +1,59 @@
+.userPythonValue{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5em;
+    color: #FFF;
+}
+.userPythonValue h1{
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+.userPythonValue h2{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #EEE;
+}
+.userPythonValue .buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+.userPythonValue button{
+    background-color: #2d4055;
+    padding: 1.5em 3em;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-weight: 500;
+    border-radius: 1.5rem;
+    transition: .1s all;
+    text-decoration: none;
+    cursor: pointer;
+}
+.userPythonValue button:hover{
+    background-color: #31455c;
+}
+@media only screen and (max-width: 767px){
+    .userPythonValue{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .userPythonValue h1{
+        font-size: 2.2rem;
+    }
+    .userPythonValue h2{
+        font-size: 1.6rem;
+    }
+    .userPythonValue .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .pythonLesson{
+        padding: 2em 1em;
+    }
+}

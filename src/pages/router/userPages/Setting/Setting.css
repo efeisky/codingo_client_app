@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+.setting{
+    font-family: 'Inter',sans-serif;
+    margin-bottom: 20rem;
+}
+.verifyAccount{
+    background-color: rgba(255, 195, 49, .1);
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.verifyAccount img{
+    width: 7.5rem;
+    height: 7.5rem;
+}
+.verifyAccount #text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    gap: 2em;
+    font-weight: 500;
+    color: #EAAF03;
+    font-weight: 500;
+}
+.verifyAccount a{
+    padding: 1em 2em;
+    background-color: #EAAF03;
+    border-radius: 1rem;
+    border: none;
+    color: #FFF;
+    font-size: 1.6rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+@media only screen and (max-width: 1020px){
+    .verifyAccount{
+        flex-direction: column;
+        height: auto;
+        padding: 2em 0;
+    }
+    .verifyAccount #text{
+        flex-direction: column;
+        font-size: 1.6rem;
+    }
+}
+.topInfos{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 20rem;
+}
+.topInfos .profile-picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: help;
+}
+.topInfos .profile-picture img{
+    width: 12.5rem;
+    height: 12.5rem;
+    background-size: contain;
+    border-radius: 2rem;
+}
+@media only screen and (max-width: 767px){
+    .topInfos{
+        grid-template-rows: 30% 70%;
+        grid-template-columns: none;
+        justify-content: center;
+        gap: 2.5em;
+        padding: 5em 0;
+        height: auto;
+    }
+}
+.topInfos .profile-picture .right-click-menu {
+    background-color: #FFF;
+    border: .1rem solid #cbcbcb;
+    flex-direction: column;
+    position: absolute;
+    gap: 1em;
+    font-size: 1.6rem;
+    padding: .75em 1em;
+    user-select: none;
+    color: #000;
+    border-radius: 1rem;
+    cursor: context-menu;
+}
+.right-click-menu a, .right-click-menu div{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+.topInfos .name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.8rem;
+    align-items: flex-start;
+    gap: .5em;
+}
+.topInfos .name .nameOpt{
+    width: 25rem;
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+.topInfos .name .nameOpt #feature{
+    color: #4285F4;
+}
+.profileInfos{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 1.8rem;
+    padding-left: 1em;
+}
+.setting h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+.profileInfos #featureDiv{
+    display: flex;
+    flex-direction: row;
+    gap : 1em;
+    padding-left: 1em;
+}
+.profileInfos #featureDiv #feature{
+    color: #4285F4;
+}
+.securityInfos ,.themeInfos, .dangeredZone{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 1.8rem;
+    padding-left: 5em;
+    margin-top: 5em;
+}
+.securityInfos #featureDiv{
+    display: flex;
+    flex-direction: row;
+    gap : 1em;
+    align-items: center;
+    padding-left: 1em;
+}
+.securityInfos #featureDiv div{
+    display: flex;
+    flex-direction: row;
+    gap : .5em;
+    align-items: center;
+}
+.securityInfos #featureDiv #feature{
+    color: #4285F4;
+    display: flex;
+}
+@media only screen and (max-width: 767px){
+    .securityInfos ,.themeInfos, .dangeredZone{
+        padding-left: 1em;
+    }
+    .securityInfos #featureDiv, .profileInfos #featureDiv{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.themeInfos{
+    width: 30%;
+}
+.themeInfos a{
+    width: 100%;
+    text-decoration: none;
+    color: #232323;
+    background-color: #FFF;
+    padding: 1em 2em;
+    text-align: center;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    border: .1rem solid #232323;
+    font-weight: 500;
+    border: none;
+}
+@media only screen and (max-width: 767px){
+    .themeInfos{
+        width: 80%;
+    }
+}
+.dangeredZone #danger{
+    color: #EA4335;
+}
+.dangeredZone span a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+.dangeredZone #event{
+    width: 20%;
+    background-color: #232323;
+    color: #FFF;
+    padding: 1em 2em;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border: none;
+}
+@media only screen and (max-width: 1020px){
+    .dangeredZone #event{
+        width: 80%;
+    }
+}
+.popupBack{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(35, 35, 35, .8);
+    z-index: 1;
+    display: grid;
+    place-items: center;
+}
+
+.popupBack .popup{
+    width: 50%;
+    height: 50vh;
+    background-color: #FFF;
+    border-radius: 5rem;
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+}
+@media only screen and (max-width: 767px){
+    .popupBack .popup{
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
+}
+.popupBack .popup h1{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.popupBack .popup span{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.popupBack .popup input{
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: .5em 1em;
+    background-color: #FFF;
+    border: .1rem solid #BBB;
+    cursor: text;
+    border-radius: .5rem;
+    outline: none;
+}
+.popupBack .popup #error{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    color: #EA4335;
+    font-weight: 500;
+}
+.popupBack .popup button{
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: .5em 1em;
+    background-color: #FFF;
+    border: .1rem solid #232323;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    transition: .3s all;
+    color: #232323;
+}
+.popupBack .popup button:hover{
+    color: #FFF;
+    background-color: #232323;
+}

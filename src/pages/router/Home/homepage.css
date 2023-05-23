@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+.page{
+  font-family: 'Inter',sans-serif;
+  background-color: #eee;
+  height: auto;
+  padding-bottom: 20rem;
+}
+.page .darkArea{
+  background-color: #232323;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15%;
+  padding: 5em;
+}
+
+.page .darkArea h1{
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 6rem;
+  text-align: center;
+  background: linear-gradient(90deg, #6C63FF 0%,#4285F4 100%);
+  background-clip: text;
+  color: transparent;
+}
+.page .darkArea p{
+  color: #FFF;
+  font-size: 4rem;
+  font-weight: 500;
+}
+.page .darkArea span{
+  color: #969696;
+  font-size: 3rem;
+  font-weight: 400;
+}
+.page .darkArea .buttons{
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+.page .darkArea .buttons button{
+  padding: 1.5em 3em;
+  font-size: 2.2rem;
+  background-color: #3E3E3E;
+  border-radius: 5rem;
+  color: #FFF;
+  cursor: pointer;
+  border: none;
+}
+.page .darkArea .buttons button#trialButton{
+  box-shadow: 0 0 0 .1rem #6C63FF, 0 0 0 .2rem #4285F4;
+}
+
+.page .darkArea .buttons button#registerButton{
+  border: .1rem solid #505050;
+}
+@media only screen and (max-width: 767px) {
+  .page .darkArea{
+    min-height: 80vh ;
+  }
+  .page .darkArea h1{
+    font-size: 3rem ;
+    line-height: 4rem;
+  }
+  .page .darkArea p{
+    font-size: 2.4rem;
+  }
+  .page .darkArea span{
+    font-size: 1.8rem;
+  }
+  .page .darkArea .buttons button{
+    padding: 1em 2em;
+    font-size: 1.8rem;
+    border-radius: 2.5rem;
+  }
+}
+.page .imageAndTexts{
+  display: flex;
+  flex-direction: column;
+  padding: 5em 0;
+  gap: 10em;
+}
+.page .imageAndTexts div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.page .imageAndTexts div#column{
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  align-items: center;
+  justify-content: center;
+}
+.page .imageAndTexts div#column span{
+  font-size: 2.4rem;
+  text-align: center;
+}
+.page .imageAndTexts div span{
+  font-size: 2.2rem;
+  white-space: break-word;
+  width: 30%;
+  line-height: 4.4rem;
+  text-align: justify;
+}
+@media only screen and (max-width: 1200px) and (min-width: 767px) {
+  .page .imageAndTexts div span{
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+  .page .imageAndTexts div img{
+    width: 50%;
+  }
+  .page .imageAndTexts div#column img{
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .page .imageAndTexts div{
+    flex-direction: column;
+    padding: 0 1em;
+    gap: 2em;
+  }
+  .page .imageAndTexts div span{
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    width: 100%;
+  }
+  .page .imageAndTexts div img{
+    width: 75%;
+  }
+  .page .imageAndTexts div#column img{
+    width: 30%;
+  }
+  .page .imageAndTexts div#column span{
+    font-size: 1.8rem;
+  }
+}

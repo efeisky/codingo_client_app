@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&500&display=swap');
+
+.navbar{
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: 15rem;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border-bottom: .1rem solid #EEE;
+}
+@media only screen and (max-width: 1200px) {
+    .navbar{
+        padding: 2.5em 0;
+        grid-template-rows: 30% 70%;
+        grid-template-columns: none;
+        height: auto;
+    }
+}
+nav .profilePictureAndNameArea{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+nav .profilePictureAndNameArea #profilePicture{
+    border-radius: 2rem;
+    width: 10rem;
+    height: 10rem;
+    background-size: cover;
+}
+@media only screen and (max-width: 1200px) {
+    
+    nav .profilePictureAndNameArea{
+        flex-direction: column;
+        gap: 1.5em;
+        padding-top: 2.5em;
+    }
+    nav .nameAndScore {
+        flex-direction: row !important;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav #profilePicture{
+        width: 5rem !important;
+        height: 5rem !important;
+
+    }
+}
+
+nav .nameAndScore{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 1.6rem;
+}
+nav .nameAndScore #username{
+    color: #3ACD7E;
+    font-weight: 500;
+}
+nav .nameAndScore #score{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+nav .prodImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+nav .links, nav .links .importants{
+    gap: 2em;
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 1920px) and (min-width: 1200px) {
+    nav .links, nav .links .importants{
+        gap: 1.5em !important;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    nav .links, nav .links .importants{
+        gap: .5em !important;
+    }
+}
+@media only screen and (max-width : 768px) {
+    nav .links, nav .links .importants{
+        gap: .5em !important;
+        flex-wrap: wrap !important;
+        flex-direction: row !important;
+        padding: 1em 2em !important;
+    }
+}
+
+nav .links #notImportant{
+    color: #000;
+    transition: .3s all;
+    text-decoration: none;
+}
+nav .links #notImportant:hover{
+    color: #4285F4;
+}
+nav .links #Important{
+    color: #FFF;
+    background-color: #4285F4;
+    padding: .5em 1em;
+    border-radius: 2rem;
+    transition: .3s all;
+    text-decoration: none;
+}
+nav .links #Important:hover{
+    background-color: #1B59C0;
+}
+nav .links #loginImportant{
+    padding: .5em 1em;
+    color: #FFF;
+    background-color: #232323;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 400;
+}
+nav .links #registerImportant{
+    padding: .5em 1em;
+    text-decoration: none;
+    color: #FFF;
+    background: rgb(181,56,199);
+    background: -moz-linear-gradient(45deg, rgba(181,56,199,1) 0%, rgba(111,0,255,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(181,56,199,1) 0%, rgba(111,0,255,1) 100%);
+    background: linear-gradient(45deg, rgba(181,56,199,1) 0%, rgba(111,0,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b538c7",endColorstr="#6f00ff",GradientType=1);
+    border-radius: 2rem;
+    font-weight: 400;
+}
+nav .loaderArea{
+    height: auto;
+}
+nav .loaderArea .sep{
+    gap: 1em;
+}

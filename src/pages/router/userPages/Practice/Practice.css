@@ -1,0 +1,28 @@
+.optionsArea{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+.optionsArea a{
+    color: #DDD;
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: .1s all;
+}
+.optionsArea button{
+    background-color: #2d4055;
+    padding: 1em 2em;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-weight: 500;
+    border-radius: 1.5rem;
+    transition: .1s all;
+    text-decoration: none;
+    max-height: 50%;
+    cursor: pointer;
+}
+.optionsArea a:hover{
+    color: #FFF;
+}
