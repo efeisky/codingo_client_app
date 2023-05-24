@@ -1,13 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import {render} from 'react-dom'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals'
 import {BrowserRouter} from "react-router-dom";
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import './app/reset.css'
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const root = document.getElementById('root')
+
+render(
   <BrowserRouter>
     <GoogleOAuthProvider clientId='251812595551-qq1unhvu2ckv7vdf1dhublbch9uipjld.apps.googleusercontent.com'>
       <App />
