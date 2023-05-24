@@ -70,7 +70,7 @@ function ResetPassword() {
   const resetPassProcess = (requestPassword,expired) => {
     const dateStr = new Date().toLocaleString();
     if(dateStr < expired){
-      axios.put('/resetPassword',{
+      axios.put('/api/resetPassword',{
         email : userValues.email,
         requestPassword : values.password
       })
