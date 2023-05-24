@@ -19,7 +19,7 @@ export const SchoolChat = ({name,username,newMessages}) => {
   }
 
   const setData = () => {
-    axios.get('/messageListBySchoolChat',{
+    axios.get('/api/messageListBySchoolChat',{
       params:{
         username,
         name
