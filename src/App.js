@@ -43,6 +43,8 @@ import PythonTest from './pages/router/userPages/PythonTest/PythonTest';
 import Trial from './pages/router/trialLesson/Trial';
 import Practice from './pages/router/userPages/Practice/Practice';
 
+import { NotFound } from './pages/router/Error/notFound';
+
 function App() {
   const location = useLocation();
 
@@ -106,7 +108,7 @@ function App() {
         <Route path={lesson.path} element={<LessonPage />} />
         <Route path={pythonTest.path} element={<PythonTest />} />
 
-        <Route path='*' element='burası 404e çıkacak'/>
+        <Route path='*' element={<NotFound/>}/>
       </Routes>
       {!ignoreFooter && <Footer />}
     </div>
