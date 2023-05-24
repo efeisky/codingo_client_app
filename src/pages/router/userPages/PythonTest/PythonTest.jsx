@@ -27,7 +27,7 @@ const PythonTest = () => {
     
     const setPythonData = async(status) => {
       if(status === 0){
-        const patch = await axios.patch('/setPythonData',{
+        const patch = await axios.patch('/api/setPythonData',{
           username : plainUsername,
           isKnow : false
         })
@@ -39,7 +39,7 @@ const PythonTest = () => {
         }
       }
       else{
-        const patch = await axios.patch('/setPythonData',{
+        const patch = await axios.patch('/api/setPythonData',{
           username : plainUsername,
           isKnow : true,
           level : status
@@ -55,7 +55,7 @@ const PythonTest = () => {
     const [question, setQuestion] = useState([])
     const [permanentlyQuestionLenght, setPermanentlyQuestionLenght] = useState([])
     const setQuestionsForTest = async() => {
-      const getQuestions = await axios.get('/getQuestion')
+      const getQuestions = await axios.get('/api/getQuestion')
       if(getQuestions.data.status){
         setQuestion([...getQuestions.data.questionValues])
         setPermanentlyQuestionLenght([...getQuestions.data.questionValues])
@@ -87,7 +87,7 @@ const PythonTest = () => {
       false : 0
     })
     const machineLearningRequest = async(sessQuestion) => {
-      const mlData = await axios.post('/pythonMachine',{
+      const mlData = await axios.post('/api/pythonMachine',{
         result : tempQuestion
       })
       if(mlData.data.status){
