@@ -39,7 +39,7 @@ const LessonPage = () => {
     const [activeQuestion, setActiveQuestion] = useState(1)
     const [question, setQuestion] = useState([])
     const setLessonData = async(lessonName,lessonClass,lessonNumber) => {
-      const reqData = await axios.get('/lessonData',{
+      const reqData = await axios.get('/api/lessonData',{
         params : {
           username : plainUsername,
           name : lessonName,
@@ -93,7 +93,7 @@ const LessonPage = () => {
       setNotInput('')
     }
     const setUserScoreAndLesson = async(newScore,username,lesClass,lesName,lesNumber,lesResult) => {
-      const set = await axios.post('/setAfterLesson',{
+      const set = await axios.post('/api/setAfterLesson',{
         username,
         addedScore : newScore,
         lessonClass : lesClass,
