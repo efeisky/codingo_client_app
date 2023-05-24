@@ -34,7 +34,7 @@ const ChatAreaMain = ({username,socketID,socket,params,eduLevel}) => {
     setFilterMode(newMode)
     setSelectedUser('')
     if(newMode === 'school'){
-      const fetch = await axios.get('/getSchoolForChat',{
+      const fetch = await axios.get('/api/getSchoolForChat',{
         params:{
           username
         }
@@ -52,7 +52,7 @@ const ChatAreaMain = ({username,socketID,socket,params,eduLevel}) => {
   const sendMessage = async ({value,date}) => {
     let messageAPI;
     if(filterMode === 'personel'){
-      messageAPI = await axios.post('/newMessageForChat',{
+      messageAPI = await axios.post('/api/newMessageForChat',{
         messageContent : value,
         messageDate : date,
         messageSender : username,
@@ -60,7 +60,7 @@ const ChatAreaMain = ({username,socketID,socket,params,eduLevel}) => {
         chatType : filterMode
       })
     }else{
-      messageAPI = await axios.post('/newMessageForChat',{
+      messageAPI = await axios.post('/api/newMessageForChat',{
         messageContent : value,
         messageDate : date,
         messageSender : username,
