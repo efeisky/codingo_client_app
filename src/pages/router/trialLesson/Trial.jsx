@@ -29,7 +29,7 @@ const Trial = () => {
 }
   const setQuestionsForTest = async(eduLevel,knowPy) => {
     
-    const getQuestions = await axios.get('/getQuestionForTrial',{
+    const getQuestions = await axios.get('/api/getQuestionForTrial',{
       params:{
         eduLevel,
         knowPy
