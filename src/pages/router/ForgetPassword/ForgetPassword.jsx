@@ -22,7 +22,7 @@ function ForgetPassword() {
   const sendCode = async () => {
     var countDownTime = 5 * 60;
     const myOTP = await createOTPNumber();
-    axios.post('/forgetPass',{
+    axios.post('/api/forgetPass',{
       email,
       myOTP
     })
