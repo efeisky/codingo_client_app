@@ -41,7 +41,7 @@ export const Picture = () => {
         let formData = new FormData();
         formData.append('file',file);
         setIsUploading(true)
-        const postData = await axios.post('/imageActions', formData, {
+        const postData = await axios.post('/api/imageActions', formData, {
           headers: {
             'Content-Type': 'multipart/form-data'
           },
@@ -81,7 +81,7 @@ export const Picture = () => {
         let formData = new FormData();
         formData.append('file',file);
         setIsUploading(true)
-        const patchData = await axios.patch('/imageActions', formData, {
+        const patchData = await axios.patch('/api/imageActions', formData, {
           headers: {
             'Content-Type': 'multipart/form-data'
           },
