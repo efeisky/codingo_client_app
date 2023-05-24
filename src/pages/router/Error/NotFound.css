@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+.notFoundArea{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 2.5em;
+    height: 80vh;
+    background-color: #5991f1;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    place-items: center;
+    color: #fff;
+}
+.notFoundArea .img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.notFoundArea img {
+    width: 50%;
+    object-fit: cover;
+    height: 50%;
+    border-radius: 5rem;
+    outline: .2rem solid #FFF;
+    outline-offset: .5rem;
+    
+}
+.notFoundArea .texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+}
+.notFoundArea h1{
+    font-size: 2.6em;
+    font-weight: 500;
+}
+.notFoundArea h2{
+    font-size: 2rem;
+}
+.notFoundArea button{
+    width: 100%;
+    padding: 1em 0;
+    border: none;
+    outline: .1rem solid #FFF;
+    background-color: #518cf1;
+    border-radius: .5rem;
+    cursor: pointer;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 1.7rem;
+    transition: .3s all;
+}
+.notFoundArea button:hover{
+    background-color: #4280eb;
+}
