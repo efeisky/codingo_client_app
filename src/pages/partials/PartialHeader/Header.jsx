@@ -22,7 +22,7 @@ const Header = () => {
   })
 
 const requestForHeader = async () => {
-  const req = await axios.get('/headerData',{
+  const req = await axios.get('/api/headerData',{
     params : {
       username : plainUsername
     }
