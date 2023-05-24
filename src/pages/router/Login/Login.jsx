@@ -46,7 +46,7 @@ const Login = () => {
   const loginRequest = ({email,password = ''},signType) => {
     setIsLoggining(true)
     if(signType === 'Google'){
-      axios.get('/loginUser',{
+      axios.get('/api/loginUser',{
         params:{
           email,
           signType
@@ -65,7 +65,7 @@ const Login = () => {
         }
       })
     }else{
-      axios.get('/loginUser',{
+      axios.get('/api/loginUser',{
         params:{
           password,
           email,
