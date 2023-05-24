@@ -31,7 +31,7 @@ const Practice = () => {
 
     const setQuestionsForPractice = async(username,lesson) => {
     
-        const getQuestions = await axios.get('/getQuestionForPractice',{
+        const getQuestions = await axios.get('/api/getQuestionForPractice',{
           params:{
             username,
             lessonName : lesson
