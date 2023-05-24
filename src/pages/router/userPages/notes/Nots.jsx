@@ -27,7 +27,7 @@ const Nots = () => {
     }
 
     const setData = async ( ) => {
-      const reqData = await axios.get('/getNots',{
+      const reqData = await axios.get('/api/getNots',{
         params:{
           username : plainUsername
         }
