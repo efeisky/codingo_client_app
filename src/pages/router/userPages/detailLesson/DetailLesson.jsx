@@ -35,7 +35,7 @@ const DetailLesson = () => {
     }, [])
     const [maxValue, setMaxValue] = useState(0)
     const getLessonDetailsByLessonNameAndClass = (lessonName,username) => {
-        axios.get('/getLessonDetailsByLessonName',{
+        axios.get('/api/getLessonDetailsByLessonName',{
             params: {
                 lessonName,
                 username
