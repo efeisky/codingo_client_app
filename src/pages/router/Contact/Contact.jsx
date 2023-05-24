@@ -21,7 +21,7 @@ const Contact = () => {
       }
     const handleSubmit = () => {
       setIsProcessing(true)
-        axios.post('/setContact',{
+        axios.post('/api/setContact',{
           email : contactValues.email,
           subject : contactValues.subject,
           content : contactValues.content
