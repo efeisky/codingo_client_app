@@ -11,7 +11,7 @@ const SearchBar = () => {
   const [activeFindUser, setActiveFindUser] = useState(false)
   const [isUploading, setIsUploading] = useState(true)
   useEffect(() => {
-    axios.get('/searchProfile')
+    axios.get('/api/searchProfile')
       .then((res) => {
         if(!res.data.err) {
           const data = res.data.profile;
