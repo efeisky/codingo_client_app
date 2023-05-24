@@ -46,7 +46,7 @@ const Setting = () => {
     const [deleteUsernameValue, setDeleteUsernameValue] = useState('')
     const [error, setError] = useState('')
     const setUserData = async(username) => {
-      const value = await axios.get('/getSetting',{
+      const value = await axios.get('/api/getSetting',{
         params : {
           name : username
         }
@@ -76,7 +76,7 @@ const Setting = () => {
     }
     const clickMenu = (e) => {e.preventDefault()}
     const deletePicture = async() => {
-      const deleteData = await axios.delete('/imageActions',{
+      const deleteData = await axios.delete('/api/imageActions',{
         params : {
           name : plainUsername,
           type : 'delete'
@@ -104,7 +104,7 @@ const Setting = () => {
     const deleteAccountWithVerification = async() => {
       if(user.un === deleteUsernameValue){
         setIsUploading({state : true, title : 'Hesabın Siliniyor..'})
-        const deleteReq = await axios.delete('/deleteAccount',{
+        const deleteReq = await axios.delete('/api/deleteAccount',{
           params : {
             name : deleteUsernameValue
           }
