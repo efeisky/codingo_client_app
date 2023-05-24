@@ -55,7 +55,7 @@ const Actions = ({hasText,buttonStyles:{
           alert('Kendi profilini beğenemezsin.')
         }else{
           const fetch = async () => {
-            const data = await axios.post('/profileActions',{
+            const data = await axios.post('/api/profileActions',{
               transaction : 'like',
               utp:action,
               upto:uptoUsername
@@ -83,7 +83,7 @@ const Actions = ({hasText,buttonStyles:{
           alert('Kendi profilini takip edemezsin.')
         }else{
           const fetch = async () => {
-            const data = await axios.post('/profileActions',{
+            const data = await axios.post('/api/profileActions',{
               transaction : 'follow',
               utp:action,
               upto:uptoUsername
