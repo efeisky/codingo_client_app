@@ -22,7 +22,7 @@ const ReportProfile = () => {
     const sendReport = async(e) => {
         e.preventDefault()
         
-        const fetch = await axios.post('/sendReportProfile',{
+        const fetch = await axios.post('/api/sendReportProfile',{
             utp : processValues.utp,
             upto : processValues.upto,
             reportContent : processValues.textValue
