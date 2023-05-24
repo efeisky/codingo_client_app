@@ -25,7 +25,7 @@ export const Verify = () => {
     const [error, setError] = useState(false)
     const [retryCodeText, setRetryCodeText] = useState(false)
     const sendCode = async() => {
-        const code = await axios.post('/sendVerificationCode',{
+        const code = await axios.post('/api/sendVerificationCode',{
             name : usernameParam
         })
         if(code.data.status){
@@ -42,7 +42,7 @@ export const Verify = () => {
         setRetryCodeText(true)
     }
     const setVerify = async() => {
-        const verify = await axios.put('/setVerify',{
+        const verify = await axios.put('/api/setVerify',{
             name : usernameParam,
             type : 'Email'
         })
