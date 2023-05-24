@@ -134,7 +134,7 @@ const Register = () => {
           if(emailValidation(userValues.email)){
             uploadScreen(true)
             if(botCheck === 0){
-                axios.post("/registerUser", {
+                axios.post("/api/registerUser", {
                     ...userValues
                 }).then((response) => {
                   if(response.data.status === 1){
@@ -175,7 +175,7 @@ const Register = () => {
   useEffect(() => {
     if(googleValues.email !== ''){
     uploadScreen(true)
-      axios.post("/registerUser", {
+      axios.post("/api/registerUser", {
         
           ...googleValues
       }).then((response) => {
