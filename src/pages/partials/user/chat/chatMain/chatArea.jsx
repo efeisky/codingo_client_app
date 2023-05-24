@@ -22,7 +22,7 @@ export const ChatArea = ({username:{
   }
 
   const setData = () => {
-    axios.get('/messageListByChat',{
+    axios.get('/api/messageListByChat',{
       params:{
         nowUsername,
         toUsername
