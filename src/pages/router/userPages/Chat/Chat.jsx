@@ -29,7 +29,7 @@ const Chat = () => {
     }
 
     const setData = async() => {
-      const reqData = await axios.get('/getUserMainpage',{
+      const reqData = await axios.get('/api/getUserMainpage',{
         params : {
           username : plainUsername
         }
