@@ -14,7 +14,7 @@ const Theme = ({username,title,content}) => {
       })
     }, [])
     const saveChanges = async() => {
-      const change = await axios.put('/saveThemeChanges',{
+      const change = await axios.put('/api/saveThemeChanges',{
         name : username,
         biography
       })
