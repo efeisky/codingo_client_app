@@ -9,7 +9,7 @@ export const ChatUsers = ({mode,username,onSelectUser}) => {
   const [userValues, setUserValues] = useState(null)
   useEffect(() => {
     if(mode === 'personel'){
-      axios.get('/chatUserList',{
+      axios.get('/api/chatUserList',{
         params:{
           username
         }
