@@ -34,7 +34,7 @@ const Order = () => {
     useEffect(() => {
       setIsFirst(false)
       if(selectedResult){
-        axios.get('/getOrder',{
+        axios.get('/api/getOrder',{
           params:{
             username : plainUsername,
             type:'local'
@@ -49,7 +49,7 @@ const Order = () => {
           })
         .catch(err => console.error(err))
       }else{
-        axios.get('/getOrder',{
+        axios.get('/api/getOrder',{
           params:{
             username : plainUsername,
             type:'global'
