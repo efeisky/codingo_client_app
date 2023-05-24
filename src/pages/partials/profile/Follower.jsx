@@ -25,7 +25,7 @@ export const Follower = ({username,follower,followed}) => {
     }
 
     const setData = async (unm,type) => {
-        const follow = await axios.get('/getFollowValues',{
+        const follow = await axios.get('/api/getFollowValues',{
             params:{
                 username : unm,
                 type
