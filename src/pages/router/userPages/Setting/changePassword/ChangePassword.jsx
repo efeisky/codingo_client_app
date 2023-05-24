@@ -21,7 +21,7 @@ export const ChangePassword = () => {
     const [error, setError] = useState(false)
     const [password, setPassword] = useState('')
     const saveNewPass = async() => {
-      const putReq = await axios.put('/changePassword',{
+      const putReq = await axios.put('/api/changePassword',{
         name : plainUsername,
         password : password
       })
