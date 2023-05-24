@@ -11,7 +11,7 @@ export const ChatUser = ({username,userType='personal'}) => {
     })
 
     useEffect(() => {
-      axios.get('/userDetailForChat',{
+      axios.get('/api/userDetailForChat',{
         params:{
             username
         }
