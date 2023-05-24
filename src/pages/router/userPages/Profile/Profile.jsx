@@ -53,7 +53,7 @@ const Profile = () => {
     const regex = /\/([^\/]+)\/profile/;
     const match = urlLog.match(regex);
     const username = match[1]
-    axios.get('/profileByUsername',{
+    axios.get('/api/profileByUsername',{
       params: {
         username : decodeURIComponent(username)
       }
