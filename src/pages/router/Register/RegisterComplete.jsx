@@ -83,7 +83,7 @@ const RegisterComplete = () => {
       formData.append('file', file)
       formData.append('username',plainUsername)
       formData.append('signType',plainsignType)
-      fetch('/completeRegister', {
+      fetch('/api/completeRegister', {
           method: "PUT",
           body: formData
       })
@@ -102,7 +102,7 @@ const RegisterComplete = () => {
       formData.append('values',JSON.stringify(values))
       formData.append('username',plainUsername)
       formData.append('signType',plainsignType)
-      fetch('/completeRegister', {
+      fetch('/api/completeRegister', {
           method: "PUT",
           body: formData
       })
