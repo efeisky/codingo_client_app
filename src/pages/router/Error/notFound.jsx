@@ -1,12 +1,10 @@
 import React from 'react'
-import Header from '../../partials/PartialHeader/Header'
 import { Link } from 'react-router-dom'
 import './NotFound.css'
 
 export const NotFound = () => {
   return (
     <div>
-      <Header/>
       <div className="notFoundArea">
         <div className="texts">
           <h1>Sayfa Bulunamadı !</h1>
