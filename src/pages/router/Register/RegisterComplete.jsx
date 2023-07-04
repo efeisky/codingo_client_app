@@ -34,7 +34,7 @@ const RegisterComplete = () => {
     password : '',
     school : '',
     userEducation : '',
-    userPython : '',
+    userPython : 'unknowed',
     userProvince : '',
     pictureSrc : '',
     signType : plainsignType
