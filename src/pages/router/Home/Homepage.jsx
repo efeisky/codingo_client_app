@@ -57,11 +57,11 @@ const Homepage = () => {
           <img 
             src='/assest/img/public/apk.svg' 
             securitypolicy='restricted'
-            alt='CHAT-GPT4 Görseli'
+            alt='Apk İmage Resmi'
             crossOrigin='anonymous'
             referrerPolicy='no-referrer'
           />
-          <a href='/assest/file/codingo.apk' download>Codingo mobil uygulamasını indirmek için basınız.</a>
+          <a href='/assest/file/codingo.apk' download>Codingo mobil uygulamasını indirmek için basınız</a>
         </div>
       </div>
     </div>
