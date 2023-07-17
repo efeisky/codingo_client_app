@@ -55,13 +55,13 @@ const Homepage = () => {
         </div>
         <div id='column'>
           <img 
-            src='/assest/img/public/tubitak.svg' 
+            src='/assest/img/public/apk.svg' 
             securitypolicy='restricted'
             alt='CHAT-GPT4 Görseli'
             crossOrigin='anonymous'
             referrerPolicy='no-referrer'
           />
-          <span>Codingo, TÜBİTAK için yapılmış bir programdır.</span>
+          <a href='/assest/file/codingo.apk' download>Codingo mobil uygulamasını indirmek için basınız.</a>
         </div>
       </div>
     </div>
