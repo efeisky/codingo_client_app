@@ -94,9 +94,15 @@
   align-items: center;
   justify-content: center;
 }
-.page .imageAndTexts div#column span{
+.page .imageAndTexts div#column img{
+  width: 25%;
+}
+.page .imageAndTexts div#column a{
   font-size: 2.4rem;
   text-align: center;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
 }
 .page .imageAndTexts div span{
   font-size: 2.2rem;
