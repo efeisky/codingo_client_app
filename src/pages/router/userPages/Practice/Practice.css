@@ -26,3 +26,13 @@
 .optionsArea a:hover{
     color: #FFF;
 }
+
+.notQuestion h1{
+    color: #FFF
+}
+
+
+.notQuestion h2{
+    color: #FFF
+    font-size: 2rem
+}
