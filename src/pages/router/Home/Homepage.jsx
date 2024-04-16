@@ -54,6 +54,8 @@ const Homepage = () => {
           <span>Sorularımızı hazırlarken CHAT-GPT4 ile yardım alıyoruz. Bu sayede sizlere en kaliteli soruları ulaştırmaya çalışıyoruz.</span>
         </div>
         <div id='column'>
+          <span>Sizler için kendimizi geliştirmeye her geçen gün devam ediyoruz. Aşağıda sahip olduğumuz uygulamaları görebilirsiniz.</span>
+          <div className="app">
           <img 
             src='/assest/img/public/apk.svg' 
             securitypolicy='restricted'
@@ -61,7 +63,13 @@ const Homepage = () => {
             crossOrigin='anonymous'
             referrerPolicy='no-referrer'
           />
-          <a href='/assest/file/codingo.apk' download>Codingo mobil uygulamasını indirmek için basınız</a>
+          </div>
+          <a href='/assest/file/codingo.apk' download>Codingo mobil uygulamasını indirmek için <span style={{
+            textDecorationLine : "underline"
+          }}>basınız</span></a>
+          <a href='/assest/file/math-project.apk' download>Dost uygulamamızı indirmek için <span style={{
+            textDecorationLine : "underline"
+          }}>basınız</span></a>
         </div>
       </div>
     </div>
