@@ -63,7 +63,7 @@ const Trial = () => {
     setActiveQuestion(no);
   };
   const finishQuestion = () => {
-    playAudio()
+    //playAudio()
     setTestStatus(-1)
   }
 
@@ -110,7 +110,7 @@ const Trial = () => {
   useEffect(() => {
     getCookie()
     return () => {
-      stopAudio();
+      //stopAudio();
     };
 }, []);
   return (
