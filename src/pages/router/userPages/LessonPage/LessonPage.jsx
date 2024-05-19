@@ -128,12 +128,12 @@ const LessonPage = () => {
       setScore(scoreToAdd)
       setMode(2)
       setUserScoreAndLesson(scoreToAdd,plainUsername,paramsObj.class,paramsObj.lessonName,paramsObj.lessonNumber,testResult)
-      playAudio()
+      //playAudio()
     }
     useEffect(() => {
         setLessonData(paramsObj.lessonName,paramsObj.class,paramsObj.lessonNumber)
         return () => {
-          stopAudio();
+           //stopAudio();
         };
     }, []);
   return (
