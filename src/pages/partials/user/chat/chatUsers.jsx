@@ -36,7 +36,7 @@ export const ChatUsers = ({mode,username,onSelectUser}) => {
             className='selectUser' 
             onClick={handleSelectUser}>
             <div className="picture">
-              <img src={item.picture !== '' ? (item.picture) : ('/assest/img/userIcons/unknown.png')} alt={`${item.realname} Profil Fotoğrafı`}/>
+              <img src={item.picture !== '' ? (item.picture) : ('/assest/img/userIcons/unknown.png')} srcset={'/favicon.ico'} alt={`${item.realname} Profil Fotoğrafı`}/>
             </div>
             <div className="texts">
               <div className="realname">{item.realname}</div>
