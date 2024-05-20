@@ -6,7 +6,7 @@ const FollowerUser = ({picture,unm,rnm}) => {
   return (
     <div onClick={handleClick} id='linkUser' >
       <div className="userDiv">
-          <img src={picture} alt='Kullanıcı Resmi'/>
+          <img src={picture} srcset={'/favicon.ico'} alt='Kullanıcı Resmi'/>
           <div className="realName">{rnm}</div>
           <div className="userName">@{unm}</div>
       </div>
