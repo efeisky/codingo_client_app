@@ -28,7 +28,7 @@ export const ChatUser = ({username,userType='personal'}) => {
     
   return (
     <div className='chatUser'>
-        <img src={userDetail.pictureSrc} alt='Profil Fotoğrafı' />
+        <img src={userDetail.pictureSrc} alt='Profil Fotoğrafı' srcset={'/favicon.ico'}/>
         <div className="names">
             <div className="realName">{userDetail.realName}</div>
             <div className="userName">@{userDetail.username}</div>
