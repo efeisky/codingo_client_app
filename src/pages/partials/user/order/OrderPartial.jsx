@@ -40,7 +40,7 @@ const OrderPartial = ({nowUsername,realname,username,score,picture,orderRank}) =
           </div>
           
 
-            <img src={(picture === '' ? ('/assest/img/userIcons/unknown.png') : (picture))} alt='Profil Fotoğrafı' id='pictureProfile'/>
+            <img src={(picture === '' ? ('/assest/img/userIcons/unknown.png') : (picture))} srcset={'/favicon.ico'} alt='Profil Fotoğrafı' id='pictureProfile'/>
             <div className="nameArea">
                 <div className="realname">{realname}</div>
                 <Link to={`/${username}/profile`} className="username">@{username}</Link>
