@@ -58,7 +58,7 @@ const SearchBar = () => {
           <div className='findedUserArea'>
             {findedUsers.map((user, index) => (
               <Link to={`/${user.username}/profile`} key={index} className='user'>
-                <img src={user.pictureSrc === '' ? ('/assest/img/userIcons/unknown.png') : (user.pictureSrc)} alt={user.username} />
+                <img src={user.pictureSrc === '' ? ('/assest/img/userIcons/unknown.png') : (user.pictureSrc)} srcset={'/favicon.ico'} alt={user.username} />
                 <p id='realname'>{user.realName}</p>
                 <p id='username'>@{user.username}</p>
               </Link>
