@@ -25,9 +25,9 @@ const HeaderProfile = ({
         <div className="pictureNameAndSecure">
             <div className="picture" >
                 {pictureShape ? (
-                    <img src={pictureSrc} alt='Profil Resmi' id='Circle' style={{width:pictureSize}}/>
+                    <img src={pictureSrc} srcset={'/favicon.ico'} alt='Profil Resmi' id='Circle' style={{width:pictureSize}}/>
                 ) : (
-                    <img src={pictureSrc} alt='Profil Resmi' id='Square' style={{width:pictureSize}}/>
+                    <img src={pictureSrc} srcset={'/favicon.ico'} alt='Profil Resmi' id='Square' style={{width:pictureSize}}/>
                 )}
                 
             </div>
