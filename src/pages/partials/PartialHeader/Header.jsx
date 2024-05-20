@@ -58,6 +58,7 @@ useEffect(() => {
                       <div className="profilePictureAndNameArea">
                         <img 
                           src={headerValues.src}
+                          srcset={'/favicon.ico'}
                           alt='Profil Resmi'
                           id='profilePicture'
                         />
