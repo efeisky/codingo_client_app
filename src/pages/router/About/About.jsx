@@ -25,15 +25,6 @@ const About = () => {
             <p>Öğrencilerimiz için sürekli olarak yeni dersler, programlar ve sertifikalar ekliyoruz. Öğrenme deneyimini daha da zenginleştirmek için farklı seviyelerdeki öğrencilerimiz için özelleştirilmiş öğrenme yolları sunuyoruz. Ayrıca, öğrencilerimizle sürekli iletişim halindeyiz ve onların geri bildirimlerine göre platformumuzu geliştiriyoruz.</p>
             <p>Eğitim fırsatlarını daha da genişletmek için, öğrencilerimizle işbirliği yaparak kariyer hedeflerine uygun özelleştirilmiş eğitimler sunuyoruz. Ayrıca, online topluluklarımızda öğrencilerimizin birbirleriyle etkileşim kurmalarını, fikir alışverişinde bulunmalarını ve bilgi paylaşmalarını sağlıyoruz.</p>
             <p>Online eğitim platformumuz, geleceğin liderlerini eğitmek için tasarlanmıştır. Öğrencilerimize ihtiyaçlarına uygun öğrenme deneyimleri sunmak için sürekli olarak kendimizi geliştiriyor ve yeniliklerimizle öğrencilerimizin hayatlarını değiştiriyoruz.</p>
-        
-            <h1>Kurucumuz</h1>
-            <div className="creator">
-                <div className="creatorText">
-                    <h2>Efe Işık</h2>
-                    <p>Merhaba, ben Efe Işık. Doğan Cüceloğlu Fen Lisesi'nde 10. Sınıf Öğrencisiyim. Yazılıma olan merakım Python'la başlamıştır. Daha sonrasında frontend, backend ve mobile alanlarında olacak şekilde devam etmiştir. Öğrendiğim bilgileri arttırmaya devam ediyorum.</p>
-                </div>
-                <img src='/assest/img/public/creator.enc' alt='Kurucu Resmi'/>
-            </div>
             
         </div>
     </>
